@@ -464,3 +464,150 @@ cite img{
     vertical-align: middle;
 
 }
+
+/*----------- Sign up section------- */
+/*------------------------------------------*/
+
+
+.section-plan{
+    background-color: #ecf0f1;
+}
+.plan-box{
+    background-color: white;
+    border-radius: 5px;
+    width: 90%;
+    /* Now to make the content centre we have to give the margin of (100-width)  that is 10 % so setting only one margin either left or right will do this trick*/
+    margin-left: 5%;
+
+}
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid rgb(241, 237, 237);
+
+}
+.plan-price{
+    font-size: 300%;
+    font-weight: 100;
+    margin-bottom: 10px;
+    color: #e67e22;
+
+
+}
+/* Here plan price span is the child of plan price so if we want to reduce the font size of child property we need to consider the parent. here parent has the font sizze 400% so if we specify 100% in the child it will take the whole 400% AS  a font size so we need to reduce it according to the parent element.
+
+
+*/
+.plan-price span{
+    font-size: 20%;
+    font-weight: 300;
+}
+.plan-price-meal{
+    font-size: 80%;
+
+}
+.plan-box ul{
+list-style: none;
+
+}
+
+.plan-box ul li{
+padding: 5px 0;
+}
+
+.plan-box div:last-child{
+    text-align: center;
+    border:none;
+}
+.plan-box div:first-child{
+    background-color: rgb(216, 215, 215);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+
+}
+
+/*----------- FOOTER------- */
+/*------------------------------------------*/
+
+
+footer{
+    background-color: #333;
+    color: #555;
+    padding-top: 40px;
+    font-size: 80%;
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+
+.social-links{
+    list-style: none;
+    float: right;
+}
+.footer-nav li,
+.social-links li
+{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-links li:last-child,
+.footer-nav li:last-child{
+    margin-right: 0 ;
+
+}
+
+
+
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border:0;
+color: #888;
+transition: color 0.2s;
+}
+
+.footer-nav li a:active,
+.footer-nav li a:hover,
+.social-links li a:active,
+.social-links li a:hover{
+    text-decoration: none;
+    border:0;
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 150%;
+}
+.facebook,
+.insta,
+.twitter,
+.linked-in{
+    transition: color 0.3s;
+}
+
+.facebook:hover,
+.linked-in:hover{
+    color: #3b5998;
+}
+.insta:hover{
+    color:red;
+}
+.twitter:hover{
+    color: #00aced;
+}
+
+
+footer p{
+color: #888;
+text-align: center;
+margin-top: 30px;
+margin-bottom: 60px;
+
+}
