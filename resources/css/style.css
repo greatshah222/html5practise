@@ -90,6 +90,7 @@ header{
 
 section{
     padding: 80px 0;
+    margin-bottom: 0;
 }
 
 .box{
@@ -161,7 +162,8 @@ h2:after{
 .long-copy{
     line-height: 145%;
     width: 70%;
-    margin-left: 15%
+    margin-left: 15%;
+    margin-bottom: 30px;
 
 }
 .box p{
@@ -230,4 +232,75 @@ h2:after{
     border: 1px solid #e67e22 ;
     color: #fff;
 
+}
+
+
+/*   MEals */
+/*   MEALS*/
+
+.section-meals{
+    padding: 0;
+}
+
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+
+}
+/*    Here in the meal-photo we put the width 100% so that it can take all the width of 100% from its parent element in this case which is .meals-showcase li.
+*/
+.meal-photo {
+    width:100%;
+    margin:0;
+    overflow: hidden;
+    background-color: black;
+}
+/* Simillarly here also the width is set 100% so that it can take all the width of 100% from its parent element here .meal photo is the parent element of ,meal-photo img.Here also the transition property is set to the transform property sso we can see the animation effect after 0.5 s.
+
+*/
+
+.meal-photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+
+}
+
+/*  Now to change the transform property while we hover over the image: Here while transforming the image back we get a small line below the image which can be removed by adding the transfrom property instead of 1 to 1.03
+
+*/
+
+.meal-photo img:hover{
+   transform: scale(1.03);
+   opacity: 1;
+}
+
+
+/*----------- HOW IT WORKS SECTION -------- */
+/*------------------------------------------*/
+
+
+.steps-box{
+    margin-top: 30px;
+}
+.steps-box:first-child{
+text-align: right;
+padding-right: 3%;
+
+}
+.steps-box:last-child{
+    padding-left: 3%;
+    
+}
+
+.app-screen {
+    width: 40%;
 }
