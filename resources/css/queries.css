@@ -1,0 +1,165 @@
+/* 
+Big tablet to 1200px( width smaller than the 1140px of our website) */
+@media only screen and (max-width: 1200px){
+    .hero-text-box{
+        width: 100%;
+        padding: 0 2%;
+}
+.row{padding: 0 2%; }
+  
+}
+
+
+
+
+
+/* 
+This targets the Ipad and phone in portait mode.Small tablet to big tablet*/
+@media only screen and (max-width: 1023px){
+body{font-size:18px;}
+section{ padding: 60px 0;}
+
+.long-copy{
+    width: 80%;
+    margin-left: 10%;
+
+}
+.steps-box{
+    margin-top: 10px;
+}
+.works-step{
+    margin-bottom: 40px;
+}
+.works-step:last-of-type{
+    margin-bottom: 60px;
+}
+.steps-box:last-child{
+    margin-top: 10px;
+
+    
+}
+.app-screen {
+    width: 50%;
+}
+.city-feature{font-size: 90%;}
+.icon-small{    
+    width: 10px;
+    margin-right: 2px;
+
+}
+.plan-box{
+    width: 100%;
+    margin-left: 0;
+}
+.plan-price{
+    font-size: 200%;
+}
+}
+
+
+
+
+/* 
+small phones from 0 to 767px.target all the phones which are less than Ipad. Ipad has 768 px.*/
+@media only screen and (max-width: 767px){
+
+    body{font-size: 15px;}
+    section{padding: 30px 0;}
+    .row ,
+    .hero-text-box{
+        padding: 0 4%;
+    }
+    .col{ width: 100%;}
+
+    /* we are hiding the normal navigation since it doesnot comply with this size. we will make mobile navigation using jquery.*/
+
+    .main-nav{display: none;}
+    h1{
+        font-size: 180%
+    }
+    h2{
+        font-size: 150%
+    }
+    .long-copy{
+        width: 100%;
+    margin-left: 0%;
+}
+
+/*  Now copying the code from how it worls section.
+.steps-box{
+    margin-top: 10px;
+}
+.works-step{
+    margin-bottom: 40px;
+}
+.works-step:last-of-type{
+    margin-bottom: 60px;
+}
+.steps-box:last-child{
+    margin-top: 10px;
+
+    
+}
+
+Now arranging for this section
+
+*/
+
+
+.works-step div {
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+    font-size: 100%;
+    padding-top: 3px;
+    margin-bottom: 1px;
+
+    
+    
+}
+.works-step{
+    margin-bottom: 20px;
+}
+.works-step:last-of-type{
+    margin-bottom: 20px;
+}
+.steps-box:first-child{
+    text-align: center;
+    padding-right: 3%;
+    margin-top: 15px;
+
+    
+    
+    }
+    .app-screen{width: 30%;}
+    .btn-app img{
+        margin-top: 10px;
+        height: 30px;
+        width: auto;
+        margin-right: 10px;
+    
+    }
+    .box img{
+        width: 60%;
+        height: auto;
+        margin-right: 20%;
+        margin-left: 20%;
+
+        margin-bottom: 20px;
+    }
+    .section-cities{
+        text-align: center;
+    }
+
+        
+    
+    
+
+}
+/* 
+small phones from 0 to 480px*/
+@media only screen and (max-width: 480px){
+
+    /*  No change required according to my view but  u can always change later*/
+
+}
